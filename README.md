@@ -1,10 +1,10 @@
 ![authonice logo][logo]
 
-# authonice demo (nodejs & mithril)
+# authonice demo (nodejs & angular)
 
 ## IN PROGRESS: not ready, yet
 
-This is the demo of [authonice](http://authonice.github.io) with [backend for nodejs](https://github.com/authonice/back-node) & a [mithril frontend](https://github.com/authonice/front-mithril).
+This is the demo of [authonice](http://authonice.github.io) with [backend for nodejs](https://github.com/authonice/back-node) & a [angular frontend](https://github.com/authonice/front-angular).
 
 [authonice](http://authonice.github.io) is a platform/language/framework agnostic ecosystem for web-app authentication, with lots of inspiration from [satellizer](https://github.com/sahat/satellizer).
 
@@ -15,7 +15,6 @@ If we don't have a module for the frontend-framework/backend-language/auth-servi
 ## features
 
 -  Quick & easy to get started
--  Mithril rocks. Faster to load & render than react. It's clean & small, and does it's job well.
 -  Express middleware efficiently handles building CSS & javascript, so no grunt/gulp!
 -  Comment widgets/animations you don't need from bootstrap and [animation.less](https://github.com/machito/animate.less)
 -  Easily themable using [bootswatch](http://bootswatch.com/)
@@ -24,7 +23,7 @@ If we don't have a module for the frontend-framework/backend-language/auth-servi
 
 ## get started
 
--  [Download](https://github.com/authonice/demo-node-mithril/archive/master.zip)
+-  [Download](https://github.com/authonice/demo-node-angular/archive/master.zip)
 -  Run `npm install` to install dependencies
 -  Run `npm start` to start the dev-server
 
