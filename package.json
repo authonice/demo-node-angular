@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/authonice/demo-node-angular",
   "dependencies": {
+    "angular": "^1.3.13",
+    "angular-route": "^1.3.13",
     "animate.less": "git://github.com/konsumer/animate.less",
     "authonice": "",
     "authonice-angular": "",

@@ -1,0 +1,18 @@
+<form class="text-center row form-signin" ng-submit="login()">
+  <div class="col-sm-6 col-sm-offset-3">
+    <h1>login</h1>
+    <div ng-if="error" class="alert alert-danger animated fadeInUp">{{error}}</div>
+    <div ng-if="success" class="alert alert-success animated fadeInUp">{{success}}</div>
+    <div class="form-group">
+      <label for="inputEmail">Email address</label>
+      <input ng-model="email" name="email" autofocus="" id="inputEmail" placeholder="Email address" required="" type="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="inputPassword">Password</label>
+      <input ng-model="password" name="password" autocomplete="off" id="inputPassword" placeholder="Password" required="" type="password" class="form-control">
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+    </div>
+  </div>
+</form>

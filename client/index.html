@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>demo</title>
+<base href="/" />
 <link href="/style/app.css" rel="stylesheet" />
-<body></body>
+<body ng-cloak>
+  <nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="NavbarCtl">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle"><span ng-click="openMenu()" class="glyphicon glyphicon-chevron-{{direction}}"></span></button>
+        <a href="/" class="navbar-brand">demo</a>
+      </div>
+      <div class="navbar-collapse {{direction}}">
+        <ul class="nav navbar-nav navbar-right">
+          <li ng-class="{ active: isActive(link.href)}" ng-repeat="link in links"><a href="{{link.href}}">{{link.label}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container" ng-view></div>
+</body>
 <script src="https://cdn.polyfill.io/v1/polyfill.min.js"></script>
 <script src="/app.js"></script>
