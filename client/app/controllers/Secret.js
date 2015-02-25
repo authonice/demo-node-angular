@@ -1,3 +1,3 @@
-angular.module('app').controller('SecretCtl', function($scope){
+angular.module('demoApp').controller('SecretController', function($scope){
 
 });

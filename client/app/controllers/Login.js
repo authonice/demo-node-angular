@@ -1,4 +1,4 @@
-angular.module('app').controller('LoginCtl', function($scope, $location, authonice){
+angular.module('demoApp').controller('LoginController', function($scope, $location, authonice){
   $scope.login = function(){
     $scope.success = false;
     $scope.error = false;

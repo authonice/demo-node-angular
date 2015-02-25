@@ -1,4 +1,4 @@
-angular.module('app').controller('RegisterCtl', function($scope, authonice, $location){
+angular.module('demoApp').controller('RegisterController', function($scope, authonice, $location){
   $scope.register = function(){
     if ($scope.password !== $scope.password2){
       $scope.error = 'Please type the same password in both boxes.';

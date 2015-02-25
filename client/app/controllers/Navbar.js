@@ -1,4 +1,4 @@
-angular.module('app').controller('NavbarCtl', function($rootScope, $scope, authonice, $location){
+angular.module('demoApp').controller('NavbarController', function($rootScope, $scope, authonice, $location){
   $scope.direction = 'down';
   $scope.links = [];
   $scope.token = authonice.token;
@@ -25,6 +25,14 @@ angular.module('app').controller('NavbarCtl', function($rootScope, $scope, autho
     document.body.style.display='none';
     document.body.offsetHeight+=0;
     document.body.style.display='';
+  });
+
+  $rootScope.$on('authonice.logout', function(){
+    $scope.links = linksOut;
+  });
+
+  $rootScope.$on('authonice.login', function(){
+    $scope.links = linksIn;
   });
 
   $scope.isActive = function (viewLocation) { 

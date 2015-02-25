@@ -1,3 +1,3 @@
-angular.module('app').controller('HomeCtl', function($scope){
+angular.module('demoApp').controller('HomeController', function($scope){
 
 });

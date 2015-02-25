@@ -2,9 +2,9 @@ require('angular');
 require('angular-route');
 require('authonice-angular');
 
-var app = angular.module('app', [
+var app = angular.module('demoApp', [
   'ngRoute',
-  'authonice'
+  'ngAuthonice'
 ]);
 
 require('./controllers/Navbar.js');
@@ -20,31 +20,31 @@ app.config(['$routeProvider', '$locationProvider',
     $routeProvider
       .when('/', {
         templateUrl: '/templates/home.html',
-        controller: 'HomeCtl'
+        controller: 'HomeController'
       })
 
       .when('/secret', {
         templateUrl: '/templates/secret.html',
-        controller: 'SecretCtl'
+        controller: 'SecretController'
       })
 
       .when('/login', {
         templateUrl: 'templates/login.html',
-        controller: 'LoginCtl'
+        controller: 'LoginController'
       })
 
       .when('/logout', {
-        controller: 'LogoutCtl'
+        controller: 'LogoutController'
       })
 
       .when('/register', {
         templateUrl: '/templates/register.html',
-        controller: 'RegisterCtl'
+        controller: 'RegisterController'
       })
 
       .when('/verify/:code', {
         templateUrl: '/templates/verify.html',
-        controller: 'VerifyCtl'
+        controller: 'VerifyController'
       })
       
       .otherwise({
