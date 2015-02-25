@@ -11,9 +11,10 @@ require('./controllers/Navbar.js');
 require('./controllers/Home.js');
 require('./controllers/Secret.js');
 require('./controllers/Login.js');
-require('./controllers/Logout.js');
 require('./controllers/Register.js');
 require('./controllers/Verify.js');
+
+require('./controllers/Logout.js');
 
 app.config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider) {
@@ -34,6 +35,7 @@ app.config(['$routeProvider', '$locationProvider',
       })
 
       .when('/logout', {
+        template: '  ',
         controller: 'LogoutController'
       })
 

@@ -1,5 +1,4 @@
-angular.module('demoApp').controller('LogoutController', function($scope, $location, authonice){
-  console.log('hi');
+angular.module('demoApp').controller('LogoutController', function($location, authonice){
   authonice.logout();
   $location.url('/');
 });
