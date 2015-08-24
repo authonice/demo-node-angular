@@ -4,7 +4,7 @@ require('authonice-angular');
 
 var app = angular.module('demoApp', [
   'ngRoute',
-  'ngAuthonice'
+  'authonice'
 ]);
 
 require('./controllers/Navbar.js');
